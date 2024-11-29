@@ -55,9 +55,21 @@
             height: 100%;
             object-fit: cover; /* 이미지 왜곡 방지 */
         }
+
+        @keyframes blink-effect {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blink {
+  animation: blink-effect 1s step-end infinite;
+}
+
     </style>
 </head>
 <body>
+    <p class="blink" style="color: white;" align="center">Tap The Card Below</p>
     <div class="card">
         <div class="card-inner">
           <div class="card-front">
